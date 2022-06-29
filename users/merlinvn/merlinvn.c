@@ -35,6 +35,45 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             /* Always cancel one-shot layer when another key gets pressed */
             if (record->event.pressed && is_oneshot_layer_active()) clear_oneshot_layer_state(ONESHOT_OTHER_KEY_PRESSED);
             return true;
+        case RSFT_TILD:
+            if (record->tap.count > 0) {
+              if (record->event.pressed) {
+                // send advanced keycode, etc.
+                // the 16 bit version of the `tap_code` function is used here
+                // because KC_HASH is a non-basic keycode.
+                tap_code16(KC_TILD);
+              }
+              // do not continue with default tap action
+              // if the MT was pressed or released, but not held
+              return false;
+            }
+            break;
+        case RCTL_LT:
+            if (record->tap.count > 0) {
+                if (record->event.pressed) {
+                    // send advanced keycode, etc.
+                    // the 16 bit version of the `tap_code` function is used here
+                    // because KC_HASH is a non-basic keycode.
+                    tap_code16(KC_LT);
+                }
+                // do not continue with default tap action
+                // if the MT was pressed or released, but not held
+                return false;
+            }
+            break;
+        case LALT_GT:
+            if (record->tap.count > 0) {
+                if (record->event.pressed) {
+                    // send advanced keycode, etc.
+                    // the 16 bit version of the `tap_code` function is used here
+                    // because KC_HASH is a non-basic keycode.
+                    tap_code16(KC_GT);
+                }
+                // do not continue with default tap action
+                // if the MT was pressed or released, but not held
+                return false;
+            }
+            break;
         case GUI_QUES:
             if (record->tap.count > 0) {
                 if (record->event.pressed) {
@@ -42,19 +81,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     // the 16 bit version of the `tap_code` function is used here
                     // because KC_HASH is a non-basic keycode.
                     tap_code16(KC_QUES);
-                }
-                // do not continue with default tap action
-                // if the MT was pressed or released, but not held
-                return false;
-            }
-            break;
-        case RSFT_TILD:
-            if (record->tap.count > 0) {
-                if (record->event.pressed) {
-                    // send advanced keycode, etc.
-                    // the 16 bit version of the `tap_code` function is used here
-                    // because KC_HASH is a non-basic keycode.
-                    tap_code16(KC_TILD);
                 }
                 // do not continue with default tap action
                 // if the MT was pressed or released, but not held

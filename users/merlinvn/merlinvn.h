@@ -21,17 +21,26 @@ enum MyLayer {
     _STE_NAV,
 };
 
+
 #define LGUI_Z LGUI_T(KC_Z)
+#define LGUI_9 LGUI_T(KC_7)
 #define LALT_X LALT_T(KC_X)
+#define LALT_8 LALT_T(KC_8)
 #define LCTL_C LCTL_T(KC_C)
+#define LCTL_7 LCTL_T(KC_7)
 #define LSFT_D LSFT_T(KC_D)
+#define LSFT_6 LSFT_T(KC_6)
 #define LSFT_V LSFT_T(KC_V)
 
 #define RGUI_SLSH RGUI_T(KC_SLASH)
+#define RGUI_4 RGUI_T(KC_4)
 #define RGUI_QUOT RGUI_T(KC_QUOT)
 #define LALT_DOT LALT_T(KC_DOT)
+#define LALT_3 LALT_T(KC_3)
 #define RCTL_COMM RCTL_T(KC_COMM)
+#define RCTL_2 RCTL_T(KC_2)
 #define RSFT_H RSFT_T(KC_H)
+#define RSFT_1 RSFT_T(KC_1)
 #define RSFT_M RSFT_T(KC_M)
 
 #define RSFT_PGDN RSFT_T(KC_PGDN)
@@ -72,5 +81,10 @@ enum MyLayer {
 
 #define GUI_QUES MT(MOD_LGUI, KC_F24)
 #define RSFT_TILD MT(MOD_RSFT, KC_F23)
+#define LALT_GT LALT_T(KC_F22)
+#define RCTL_LT RCTL_T(KC_F22)
 
+
+#define ______LEFT_HOME______ LGUI_Z,LALT_X,LCTL_C,LSFT_D,KC_V
+#define ______RIGHT_HOME______  KC_K,RSFT_H, RCTL_COMM,LALT_DOT,RGUI_SLSH
 

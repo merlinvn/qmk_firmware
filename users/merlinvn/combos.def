@@ -1,32 +1,42 @@
-COMB(wfTab,      KC_TAB,          KC_W, KC_F)
-COMB(uyDel,      KC_DEL,          KC_U, KC_Y)
+COMB(wfQ,         KC_Q,            KC_W, KC_F)
+COMB(fpDel,       KC_DEL,          KC_F, KC_P)
+COMB(eiBackspace, KC_BSPC,         KC_E, KC_I)
+COMB(numBackspace, KC_BSPC,         KC_5, KC_6)
+COMB(rsTab,       KC_TAB,          KC_R, KC_S)
+COMB(stLshift,    OSM(MOD_LSFT),          KC_S, LT(7,KC_T))
+COMB(neRshift,    OSM(MOD_RSFT),          KC_N, KC_E)
 
-COMB(ioSHFT,      OSM(MOD_RSFT),         KC_I, KC_O)
-COMB(neCTL,      OSM(MOD_RCTL),         KC_N, KC_E)
-COMB(eiALT,      OSM(MOD_LALT),         KC_E, KC_I)
-COMB(niGUI,      OSM(MOD_RGUI),         KC_N, KC_I)
+COMB(seCaps,      CAPSWRD,         KC_S, KC_E)
 
-COMB(arSHFT,      OSM(MOD_LSFT),         KC_A, KC_R)
-COMB(stCtl,      OSM(MOD_LCTL),         KC_S, KC_T)
-COMB(rsALT,      OSM(MOD_LALT),         KC_R, KC_S)
-COMB(rtGUI,      OSM(MOD_LGUI),         KC_R, KC_T)
+//COMB(dhCaps,      CAPSWRD,         LSFT_T(KC_D), RSFT_T(KC_H))
+//COMB(hcomSHFT,    OSM(MOD_RSFT),   RCTL_T(KC_COMM), RSFT_T(KC_H) )
+//COMB(cdShft,      OSM(MOD_LSFT),   LCTL_T(KC_C), LSFT_T(KC_D))
 
-
-COMB(xcBackspace, KC_BSPC,          KC_X, KC_C)
-
-COMB(cdNum,      OSL(7),          KC_C, KC_D)
-COMB(hcomFn,      OSL(5),         KC_H, KC_COMM)
-
-COMB(comdotEnt,      KC_ENT,          KC_COMM, KC_DOT)
+// COMB(wfTab,      KC_TAB,          KC_W, KC_F)
+// COMB(uyDel,      KC_DEL,          KC_U, KC_Y)
+// 
+// COMB(ioSHFT,      OSM(MOD_RSFT),         KC_I, KC_O)
+// COMB(neCTL,      OSM(MOD_RCTL),         KC_N, KC_E)
+// COMB(eiALT,      OSM(MOD_LALT),         KC_E, KC_I)
+// COMB(niGUI,      OSM(MOD_RGUI),         KC_N, KC_I)
+// 
+// COMB(arSHFT,      OSM(MOD_LSFT),         KC_A, KC_R)
+// COMB(stCtl,      OSM(MOD_LCTL),         KC_S, KC_T)
+// COMB(rsALT,      OSM(MOD_LALT),         KC_R, KC_S)
+// COMB(rtGUI,      OSM(MOD_LGUI),         KC_R, KC_T)
+// 
+// 
+// COMB(xcBackspace, KC_BSPC,          KC_X, KC_C)
+// 
+// COMB(cdNum,      OSL(7),          KC_C, KC_D)
+// COMB(hcomFn,      OSL(5),         KC_H, KC_COMM)
+// 
+// COMB(comdotEnt,      KC_ENT,          KC_COMM, KC_DOT)
 
 //COMB(wfHash,      KC_HASH,          KC_W, KC_F)
 //COMB(fpDollar,      KC_DOLLAR,          KC_F, KC_P)
 
-//COMB(wfEsc,      KC_ESC,          KC_W, KC_F)
-//COMB(rsBackspace, KC_BSPC,          KC_R, KC_S)
-//COMB(fpDel,      KC_DEL,          KC_F, KC_P)
 //COMB(stTab,      KC_TAB,          KC_S, KC_T)
-//COMB(stTab2,      KC_TAB,          KC_S, LT(7,KC_T))
 // COMB(stNUM,      OSL(5),          KC_S, KC_T)
 //COMB(rsQuot, KC_QUOT,          KC_R, KC_S)
 //COMB(cdEnt,       KC_ENT,         LCTL_T(KC_C), LSFT_T(KC_D))
