@@ -9,9 +9,9 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE0] = LAYOUT(
-    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,             KC_SLASH,    KC_L,  KC_U,    KC_Y,   KC_QUES,
+    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,             KC_Z,    KC_L,  KC_U,    KC_Y,   KC_QUES,
     KC_A,    KC_R,    KC_S,    NUM_T,    KC_G,            KC_M,    KC_N,  KC_E,    KC_I,   KC_O,
-    LGUI_Z, LALT_X,  LCTL_C, LSFT_D,    KC_V,             KC_COMM,    RSFT_H, RCTL_J, LALT_K, RGUI_DOT,
+    LGUI_COMM, LALT_X,  LCTL_C, LSFT_D,    KC_V,          KC_SLASH,    RSFT_H, RCTL_J, LALT_K, RGUI_DOT,
                                     MEH_ESC, NAV_SPC, OSL(_SYMBOLS), FN_ENT
   ),
 
@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_NAVIGATION] = LAYOUT(
-    SW_WIN, SW_TAB, KC_DEL, KC_TAB, KC_CAPS,                               KC_PGUP, KC_HOME, KC_UP, KC_END, KC_BSPC,
+    SW_WIN, SW_TAB, KC_DEL, KC_TAB, KC_CAPS,                               KC_PGUP, KC_HOME, KC_UP, KC_END, KC_APP,
     LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), LGUI(KC_4), LGUI(KC_5),            KC_PGDN, KC_LEFT, KC_DOWN,  KC_RGHT, KC_INS,
     LGUI_9, LALT_8, LCTL_7, LSFT_6, KC_0,                                  KC_5, RSFT_1, RCTL_2, LALT_3, RGUI_4,
                                     KC_TRNS, KC_TRNS, KC_TRNS, KC_ENT

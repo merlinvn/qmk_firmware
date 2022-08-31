@@ -22,6 +22,7 @@ enum MyLayer {
 };
 
 #define LGUI_Z LGUI_T(KC_Z)
+#define LGUI_COMM LGUI_T(KC_COMM)
 #define LGUI_9 LGUI_T(KC_7)
 #define LALT_X LALT_T(KC_X)
 #define LALT_8 LALT_T(KC_8)
