@@ -21,7 +21,6 @@ enum MyLayer {
     _STE_NAV,
 };
 
-
 #define LGUI_Z LGUI_T(KC_Z)
 #define LGUI_9 LGUI_T(KC_7)
 #define LALT_X LALT_T(KC_X)
@@ -35,9 +34,12 @@ enum MyLayer {
 #define RGUI_SLSH RGUI_T(KC_SLASH)
 #define RGUI_4 RGUI_T(KC_4)
 #define RGUI_QUOT RGUI_T(KC_QUOT)
+#define RGUI_DOT RGUI_T(KC_DOT)
 #define LALT_DOT LALT_T(KC_DOT)
+#define LALT_K LALT_T(KC_K)
 #define LALT_3 LALT_T(KC_3)
 #define RCTL_COMM RCTL_T(KC_COMM)
+#define RCTL_J RCTL_T(KC_J)
 #define RCTL_2 RCTL_T(KC_2)
 #define RSFT_H RSFT_T(KC_H)
 #define RSFT_1 RSFT_T(KC_1)
@@ -55,6 +57,8 @@ enum MyLayer {
 
 #define NAV_ESC LT(_NAVIGATION, KC_ESC)
 #define NAV_SPC LT(_NAVIGATION, KC_SPC)
+
+#define MEH_ESC MEH_T(KC_ESC)
 
 #define MED_ESC LT(_MEDIA, KC_ESC)
 #define MED_TAB LT(_MEDIA, KC_TAB)
@@ -79,12 +83,10 @@ enum MyLayer {
 #define NUM_SPC LT(_NUMBERS, KC_SPC)
 #define NUM_TAB LT(_NUMBERS, KC_TAB)
 
-#define GUI_QUES MT(MOD_LGUI, KC_F24)
-#define RSFT_TILD MT(MOD_RSFT, KC_F23)
-#define LALT_GT LALT_T(KC_F22)
-#define RCTL_LT RCTL_T(KC_F22)
+#define RSFT_LT RSFT_T(KC_F23)
+#define RCTL_GT RCTL_T(KC_F21)
+#define LALT_TILD LALT_T(KC_F22)
+#define GUI_QUES LGUI_T(KC_F24)
 
-
-#define ______LEFT_HOME______ LGUI_Z,LALT_X,LCTL_C,LSFT_D,KC_V
-#define ______RIGHT_HOME______  KC_K,RSFT_H, RCTL_COMM,LALT_DOT,RGUI_SLSH
-
+#define ______LEFT_HOME______ LGUI_Z, LALT_X, LCTL_C, LSFT_D, KC_V
+#define ______RIGHT_HOME______ KC_K, RSFT_H, RCTL_COMM, LALT_DOT, RGUI_SLSH

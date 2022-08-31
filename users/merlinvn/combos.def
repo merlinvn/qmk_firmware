@@ -3,34 +3,38 @@ COMB(fpDel,       KC_DEL,          KC_F, KC_P)
 COMB(eiBackspace, KC_BSPC,         KC_E, KC_I)
 COMB(numBackspace, KC_BSPC,         KC_5, KC_6)
 COMB(rsTab,       KC_TAB,          KC_R, KC_S)
-COMB(stLshift,    OSM(MOD_LSFT),          KC_S, LT(7,KC_T))
-COMB(neRshift,    OSM(MOD_RSFT),          KC_N, KC_E)
 
-COMB(seCaps,      CAPSWRD,         KC_S, KC_E)
+// COMB(seCaps,      CAPSWRD,         KC_S, KC_E)
+COMB(thumbCaps,      CAPSWRD,       LT(3, KC_SPC)  , OSL(4))
+COMB(medLay,      OSL(6),         MEH_T(KC_ESC), LT(5,KC_ENT))
 
+COMB(stEsc,        KC_ESC,          KC_S, LT(7,KC_T))
+COMB(neColon,      KC_COLON,         KC_N, KC_E)
+
+//COMB(neRshift,    OSM(MOD_RSFT),          KC_N, KC_E)
 //COMB(dhCaps,      CAPSWRD,         LSFT_T(KC_D), RSFT_T(KC_H))
 //COMB(hcomSHFT,    OSM(MOD_RSFT),   RCTL_T(KC_COMM), RSFT_T(KC_H) )
 //COMB(cdShft,      OSM(MOD_LSFT),   LCTL_T(KC_C), LSFT_T(KC_D))
 
 // COMB(wfTab,      KC_TAB,          KC_W, KC_F)
 // COMB(uyDel,      KC_DEL,          KC_U, KC_Y)
-// 
+//
 // COMB(ioSHFT,      OSM(MOD_RSFT),         KC_I, KC_O)
 // COMB(neCTL,      OSM(MOD_RCTL),         KC_N, KC_E)
 // COMB(eiALT,      OSM(MOD_LALT),         KC_E, KC_I)
 // COMB(niGUI,      OSM(MOD_RGUI),         KC_N, KC_I)
-// 
+//
 // COMB(arSHFT,      OSM(MOD_LSFT),         KC_A, KC_R)
 // COMB(stCtl,      OSM(MOD_LCTL),         KC_S, KC_T)
 // COMB(rsALT,      OSM(MOD_LALT),         KC_R, KC_S)
 // COMB(rtGUI,      OSM(MOD_LGUI),         KC_R, KC_T)
-// 
-// 
+//
+//
 // COMB(xcBackspace, KC_BSPC,          KC_X, KC_C)
-// 
+//
 // COMB(cdNum,      OSL(7),          KC_C, KC_D)
 // COMB(hcomFn,      OSL(5),         KC_H, KC_COMM)
-// 
+//
 // COMB(comdotEnt,      KC_ENT,          KC_COMM, KC_DOT)
 
 //COMB(wfHash,      KC_HASH,          KC_W, KC_F)
@@ -50,7 +54,6 @@ COMB(seCaps,      CAPSWRD,         KC_S, KC_E)
 //COMB(neEnt,      KC_ENT,         KC_N, KC_E)
 
 //COMB(luEnt,      KC_ENT,         KC_L, KC_U)
-//COMB(neColon,      KC_COLON,         KC_N, KC_E)
 //COMB(eiUNDS,      KC_UNDS,         KC_E, KC_I)
 
 //COMB(hcomSHFT,      OSM(MOD_RSFT),         KC_H, KC_COMM)
