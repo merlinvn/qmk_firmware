@@ -89,5 +89,14 @@ enum MyLayer {
 #define LALT_TILD LALT_T(KC_F22)
 #define GUI_QUES LGUI_T(KC_F24)
 
+#define OS_LCTL OSM(MOD_LCTL)
+#define OS_LALT OSM(MOD_LALT)
+#define OS_LGUI OSM(MOD_LGUI)
+#define OS_LSFT OSM(MOD_LSFT)
+#define OS_RCTL OSM(MOD_RCTL)
+#define OS_RALT OSM(MOD_RALT)
+#define OS_RGUI OSM(MOD_RGUI)
+#define OS_RSFT OSM(MOD_RSFT)
+
 #define ______LEFT_HOME______ LGUI_Z, LALT_X, LCTL_C, LSFT_D, KC_V
 #define ______RIGHT_HOME______ KC_K, RSFT_H, RCTL_COMM, LALT_DOT, RGUI_SLSH
