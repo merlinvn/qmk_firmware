@@ -2,19 +2,27 @@ SUBS(quMac, "qu",  KC_Q, KC_W)
 COMB(wfDel,       KC_DEL,          KC_W, KC_F)
 COMB(fpDqt,       KC_DQT,          KC_F, KC_P)
 COMB(wpExcl,       KC_EXLM,          KC_W, KC_P)
+COMB(wpExcl2,      KC_EXLM,          KC_AT, KC_RCBR)
 
 COMB(luSemi,       KC_SCLN,          KC_L, KC_U)
 COMB(uyStar,       KC_ASTR,          KC_U, KC_Y)
 COMB(lyQues,       KC_QUES,          KC_L, KC_Y)
 
+COMB(luSemi2,       KC_SCLN,          KC_CIRC, KC_AMPR)
+COMB(uyStar2,       KC_ASTR,          KC_AMPR, KC_DLR)
+COMB(lyQues2,       KC_QUES,          KC_CIRC, KC_DLR)
+
 COMB(rsTab,        KC_TAB,          KC_R, KC_S)
 COMB(stEsc,        KC_ESC,          KC_S, LT(7,KC_T))
 COMB(rtDash,       KC_MINS,          KC_R, LT(7,KC_T))
+COMB(rtDash2,       KC_MINS,          KC_HASH, KC_RPRN)
 
-COMB(hiBackspace, KC_BSPC,         KC_H, KC_I)
+COMB(hiBackspace, KC_BSPC,          KC_H, KC_I)
 COMB(numBackspace, KC_BSPC,         KC_5, KC_6)
-COMB(nhColon,      KC_COLON,         KC_N, KC_H)
-COMB(niUnd,      KC_UNDS,         KC_N, KC_I)
+COMB(nhColon,      KC_COLON,        KC_N, KC_H)
+COMB(nhColon2,      KC_COLON,       KC_SLSH, KC_LT)
+COMB(niUnd,      KC_UNDS,           KC_N, KC_I)
+COMB(niUnd2,      KC_UNDS,          KC_SLSH, KC_GT)
 
 COMB(cdSHFT,     OSM(MOD_LSFT),         KC_C, KC_D)
 COMB(xcCTL,      OSM(MOD_LCTL),         KC_X, KC_C)
@@ -26,8 +34,8 @@ COMB(kcomCTL,    OSM(MOD_RCTL),         KC_K, KC_COMM)
 COMB(sljALT,     OSM(MOD_LALT),         KC_SLSH, KC_J)
 COMB(jcomGUI,    OSM(MOD_RGUI),         KC_J, KC_COMM)
 
-COMB(thumbCaps,      CAPSWRD,       LT(3, KC_SPC)  , OSL(4))
-// COMB(seCaps,      CAPSWRD,         KC_S, KC_E)
+COMB(thumbCaps,      CAPSWRD,       LT(3, KC_SPC)  , KC_E)
+COMB(shCaps,      CAPSWRD,         KC_S, KC_H)
 COMB(medLay,      OSL(6),         MEH_T(KC_ESC), LT(5,KC_ENT))
 
 
