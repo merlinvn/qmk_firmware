@@ -17,9 +17,15 @@ enum MyLayer {
     _FN,
     _MEDIA,
     _NUMBERS,
+    _MOUSE,
     _STE_SYM,
     _STE_NAV,
 };
+
+#define LGUI_A LGUI_T(KC_A)
+#define LALT_R LALT_T(KC_R)
+#define LCTL_S LCTL_T(KC_S)
+#define LSFT_TT LSFT_T(KC_T)
 
 #define LGUI_Z LGUI_T(KC_Z)
 #define LGUI_COMM LGUI_T(KC_COMM)
@@ -31,6 +37,12 @@ enum MyLayer {
 #define LSFT_D LSFT_T(KC_D)
 #define LSFT_6 LSFT_T(KC_6)
 #define LSFT_V LSFT_T(KC_V)
+
+#define RSFT_N RSFT_T(KC_N)
+#define RCTL_H RCTL_T(KC_H)
+#define LALT_I LALT_T(KC_I)
+#define RGUI_O RGUI_T(KC_O)
+
 
 #define RGUI_SLSH RGUI_T(KC_SLASH)
 #define RGUI_4 RGUI_T(KC_4)
@@ -71,6 +83,7 @@ enum MyLayer {
 #define SHFT_TAB RSFT_T(KC_TAB)
 #define SHFT_DEL RSFT_T(KC_DEL)
 
+#define SYM_E LT(_SYMBOLS, KC_E)
 #define SYM_BS LT(_SYMBOLS, KC_BSPC)
 #define SYM_D LT(_SYMBOLS, KC_D)
 #define SYM_H LT(_SYMBOLS, KC_H)
@@ -78,6 +91,7 @@ enum MyLayer {
 #define FN_ENT LT(_FN, KC_ENT)
 #define FN_DEL LT(_FN, KC_DEL)
 
+#define NUM_D LT(_NUMBERS, KC_D)
 #define NUM_T LT(_NUMBERS, KC_T)
 #define NUM_G LT(_NUMBERS, KC_G)
 #define NUM_F LT(_NUMBERS, KC_F)

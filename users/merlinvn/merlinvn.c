@@ -22,7 +22,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     update_swapper(&sw_win_active, KC_LALT, KC_TAB, SW_WIN, keycode, record);
-    update_swapper(&sw_tab_active, KC_LCTRL, KC_TAB, SW_TAB, keycode, record);
+    update_swapper(&sw_tab_active, KC_LCTL, KC_TAB, SW_TAB, keycode, record);
 
     /* update_swapper( */
     /*     &sw_lang_active, KC_LCTL, KC_SPC, SW_LANG, */
