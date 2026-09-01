@@ -1,0 +1,34 @@
+//COMB(wfHash,      KC_HASH,          KC_W, KC_F)
+//COMB(fpDollar,      KC_DOLLAR,          KC_F, KC_P)
+
+COMB(wfEsc,      KC_ESC,          KC_W, KC_F)
+COMB(rsBackspace, KC_BSPC,          KC_R, KC_S)
+COMB(fpDel,      KC_DEL,          KC_F, KC_P)
+//COMB(stTab,      KC_TAB,          KC_S, KC_T)
+COMB(stTab2,      KC_TAB,          KC_S, LT(7,KC_T))
+// COMB(stNUM,      OSL(5),          KC_S, KC_T)
+//COMB(rsQuot, KC_QUOT,          KC_R, KC_S)
+//COMB(cdEnt,       KC_ENT,         LCTL_T(KC_C), LSFT_T(KC_D))
+
+
+//COMB(eiDqts,      KC_DQT,         KC_E, KC_I)
+//COMB(neQuot,      KC_QUOT,         KC_N, KC_E)
+//COMB(uyQuote,      KC_QUOT,         KC_U, KC_Y)
+//COMB(uyColon,      KC_COLON,         KC_U, KC_Y)
+//COMB(eiFnLay,      OSL(7),         KC_E, KC_I)
+//COMB(neEnt,      KC_ENT,         KC_N, KC_E)
+
+COMB(luEnt,      KC_ENT,         KC_L, KC_U)
+COMB(neColon,      KC_COLON,         KC_N, KC_E)
+COMB(eiUNDS,      KC_UNDS,         KC_E, KC_I)
+
+//COMB(eiQues,      KC_QUES,         KC_E, KC_I)
+//COMB(neBS,      KC_BSPC,         KC_N, KC_E)
+//COMB(yqBackspace,      KC_BSPC,         KC_Y, KC_QUOT)
+
+SUBS(openCloseParen, "()"SS_TAP(X_LEFT),  KC_LPRN, KC_RPRN)
+SUBS(openCloseBrace, "{}"SS_TAP(X_LEFT),  KC_LCBR, KC_RCBR)
+SUBS(openCloseSqrBra,"[]"SS_TAP(X_LEFT),  KC_LBRC, KC_RBRC)
+SUBS(openCloseDQuote,"\"\""SS_TAP(X_LEFT),  KC_DQT, KC_UNDS)
+SUBS(openCloseQuote,"''"SS_TAP(X_LEFT),  KC_QUOT, KC_DQT)
+SUBS(openCloseABra,"<>"SS_TAP(X_LEFT),  KC_LT, KC_GT)
